@@ -26,4 +26,5 @@ task zip(type: Zip) {
 	destinationDir(file("dist"))
 	baseName "trainschedule"
 }
+build.dependsOn zip
 zip.dependsOn npm_build
